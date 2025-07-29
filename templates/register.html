@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="split-card">
+        <div class="split-left">
+            <h1>Welcome!</h1>
+            <p>Join our community and enjoy exclusive benefits.</p>
+            <img src="https://img.icons8.com/fluency/96/000000/add-user-group-man-man.png" alt="Welcome" style="margin-top:30px;">
+        </div>
+        <div class="split-right">
+            <form method="post" class="split-form">
+                <h2>Create Account</h2>
+                <div class="input-group">
+                    <span class="input-icon"><i class="fa fa-user"></i></span>
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-icon"><i class="fa fa-lock"></i></span>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <input type="submit" value="Sign Up" class="split-btn">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
